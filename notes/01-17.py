@@ -26,5 +26,5 @@ Exercise:
 very big disconnect between what we'll do in lecture and what I'll expect you to do
 outside, doing this relatively large Web dev project in a team of 5 or 6
 
-in lecture we'll cover Python, a little JavaScript, relational algegra, SQL, a little Java, and refactoring
+in lecture we'll cover Python, a little JavaScript, relational algebra, SQL, a little Java, and refactoring
 """

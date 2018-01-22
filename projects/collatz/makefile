@@ -29,15 +29,15 @@ Collatz.html: Collatz.py
 Collatz.log:
 	git log > Collatz.log
 
-RunCollatz.pyx: Collatz RunCollatz
-	-mypy   $<
-	-pylint $<
+RunCollatz.pyx: Collatz.py RunCollatz.py .pylintrc
+	-mypy   RunCollatz.py
+	-pylint RunCollatz.py
 	./RunCollatz.py < RunCollatz.in > RunCollatz.tmp
 	-diff RunCollatz.tmp RunCollatz.out
 
-TestCollatz.pyx: Collatz TestCollatz .pylintrc
-	-mypy   $<
-	-pylint $<
+TestCollatz.pyx: Collatz.py TestCollatz.py .pylintrc
+	-mypy     TestCollatz.py
+	-pylint   TestCollatz.py
 	-coverage run    --branch TestCollatz.py
 	-coverage report -m
 

@@ -28,3 +28,4 @@ travis:
 	make clean
 	ls -al
 	make run
+	ls -al

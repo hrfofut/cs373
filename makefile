@@ -2,9 +2,13 @@
 
 all:
 	cd examples; make all
+	@echo
+	cd projects/collatz; make all
 
 clean:
 	cd examples; make clean
+	@echo
+	cd projects/collatz; make clean
 
 config:
 	git config -l
@@ -40,6 +44,8 @@ push:
 
 run:
 	cd examples; make run
+	@echo
+	cd projects/collatz; make run
 
 status:
 	make clean
@@ -56,6 +62,17 @@ sync:
     --include "Assertions.py"              \
     --exclude "*"                          \
     ../../examples/python/ examples
+	@rsync -r -t -u -v --delete            \
+    --include "Collatz.py"                 \
+    --include "RunCollatz.py"              \
+    --include "RunCollatz.in"              \
+    --include "RunCollatz.out"             \
+    --include "TestCollatz.py"             \
+    --include "TestCollatz.out"            \
+    --exclude "*"                          \
+    ../../projects/python/collatz/ projects/collatz
 
 travis:
 	cd examples; make travis
+	@echo
+	cd projects/collatz; make travis

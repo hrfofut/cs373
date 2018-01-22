@@ -38,6 +38,7 @@ push:
 	git add examples
 	git add makefile
 	git add notes
+	git add projects/collatz
 	git commit -m "another commit"
 	git push
 	git status

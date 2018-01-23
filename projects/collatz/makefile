@@ -60,9 +60,9 @@ docker:
 	docker run -it -v $(PWD):/usr/collatz -w /usr/collatz gpdowning/python
 
 format:
-	autopep8) -i Collatz.py
-	autopep8) -i RunCollatz.py
-	autopep8) -i TestCollatz.py
+	autopep8 -i Collatz.py
+	autopep8 -i RunCollatz.py
+	autopep8 -i TestCollatz.py
 
 run: RunCollatz.pyx TestCollatz.pyx
 

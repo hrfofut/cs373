@@ -64,6 +64,11 @@ sync:
     --exclude "*"                          \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete            \
+    --include "Hello.js"                   \
+    --include "Assertions.js"              \
+    --exclude "*"                          \
+    ../../examples/javascript/ examples
+	@rsync -r -t -u -v --delete            \
     --include "Collatz.py"                 \
     --include "RunCollatz.py"              \
     --include "RunCollatz.in"              \

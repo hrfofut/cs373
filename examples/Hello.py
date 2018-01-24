@@ -11,6 +11,7 @@
 # https://www.python.org
 # https://docs.python.org/3.6/
 # https://docs.python.org/3.6/library/
+# https://www.pylint.org
 # https://www.python.org/dev/peps/pep-0008/
 # http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
 

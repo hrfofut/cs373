@@ -74,12 +74,12 @@ sync:
 	@rsync -r -t -u -v --delete            \
     --include "Hello.js"                   \
     --include "Assertions.js"              \
-    --include "UnitTests1.py"              \
-    --include "UnitTests2.py"              \
-    --include "UnitTests3.py"              \
-    --include "Coverage1.py"               \
-    --include "Coverage2.py"               \
-    --include "Coverage3.py"               \
+    --include "UnitTests1.js"              \
+    --include "UnitTests2.js"              \
+    --include "UnitTests3.js"              \
+    --include "Coverage1.js"               \
+    --include "Coverage2.js"               \
+    --include "Coverage3.js"               \
     --exclude "*"                          \
     ../../examples/javascript/ examples
 	@rsync -r -t -u -v --delete            \

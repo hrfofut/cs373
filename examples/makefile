@@ -1,7 +1,12 @@
 .DEFAULT_GOAL := all
 
 FILES :=                    \
-    Hello
+    Hello                   \
+    UnitTests3              \
+    Coverage1               \
+    Coverage2               \
+    Coverage3               \
+    IsPrime
 
 .pylintrc:
 	pylint --disable=locally-disabled --reports=no --generate-rcfile > $@

@@ -61,11 +61,25 @@ sync:
     --include "Dockerfile"                 \
     --include "Hello.py"                   \
     --include "Assertions.py"              \
+    --include "UnitTests1.py"              \
+    --include "UnitTests2.py"              \
+    --include "UnitTests3.py"              \
+    --include "Coverage1.py"               \
+    --include "Coverage2.py"               \
+    --include "Coverage3.py"               \
+    --include "IsPrime.py"                 \
+    --include "IsPrimeT.py"                \
     --exclude "*"                          \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete            \
     --include "Hello.js"                   \
     --include "Assertions.js"              \
+    --include "UnitTests1.py"              \
+    --include "UnitTests2.py"              \
+    --include "UnitTests3.py"              \
+    --include "Coverage1.py"               \
+    --include "Coverage2.py"               \
+    --include "Coverage3.py"               \
     --exclude "*"                          \
     ../../examples/javascript/ examples
 	@rsync -r -t -u -v --delete            \

@@ -16,7 +16,7 @@ n + (n >> 1) + 1
 
 b = 10
 e = 100
-m = 51                       // b is <= m
+m = 51                       # b is <= m
 mcl(10, 100) == mcl(51, 100)
 
 """
@@ -30,7 +30,7 @@ the numbers in the range [10, 50] all map to numbers in the range [51, 100] by r
 
 b = 200
 e = 300
-m = 151 // b is not <= m
+m = 151 # b is not <= m
 
 """
 show a very basic JavaScript script

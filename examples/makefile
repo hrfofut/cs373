@@ -6,7 +6,8 @@ FILES :=                    \
     Coverage1               \
     Coverage2               \
     Coverage3               \
-    IsPrime
+    IsPrime                 \
+    IsPrimeT
 
 .pylintrc:
 	pylint --disable=locally-disabled --reports=no --generate-rcfile > $@

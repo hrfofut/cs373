@@ -70,7 +70,7 @@ sync:
     --include "IsPrime.py"                 \
     --include "IsPrimeT.py"                \
     --include "Exceptions.py"              \
-    --include "StrEq.py"                   \
+    --include "StrCmp.py"                  \
     --exclude "*"                          \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete            \

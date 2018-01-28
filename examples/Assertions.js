@@ -26,12 +26,13 @@ function cycle_length (n) {
     assert(c > 0);
     return c;}
 
+function test () {
+    assert(cycle_length( 1) === 1);
+    assert(cycle_length( 5) === 6);
+    assert(cycle_length(10) === 7);}
+
 console.log("Assertions.js");
-
-assert(cycle_length( 1) === 1);
-assert(cycle_length( 5) === 6);
-assert(cycle_length(10) === 7);
-
+test();
 console.log("Done.");
 
 /*
@@ -42,14 +43,14 @@ assert.js:42
   ^
 
 AssertionError [ERR_ASSERTION]: false == true
-    at cycle_length (/Users/downing/Dropbox/examples/javascript/Assertions.js:20:5)
-    at Object.<anonymous> (/Users/downing/Dropbox/examples/javascript/Assertions.js:25:8)
-    at Module._compile (module.js:641:30)
-    at Object.Module._extensions..js (module.js:652:10)
-    at Module.load (module.js:560:32)
-    at tryModuleLoad (module.js:503:12)
-    at Function.Module._load (module.js:495:3)
-    at Function.Module.runMain (module.js:682:10)
-    at startup (bootstrap_node.js:191:16)
-    at bootstrap_node.js:613:3
+    at cycle_length (/Users/downing/Dropbox/examples/javascript/Assertions.js:26:5)
+    at test (/Users/downing/Dropbox/examples/javascript/Assertions.js:30:12)
+    at Object.<anonymous> (/Users/downing/Dropbox/examples/javascript/Assertions.js:35:1)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Function.Module.runMain (module.js:701:10)
+    at startup (bootstrap_node.js:193:16)
 */

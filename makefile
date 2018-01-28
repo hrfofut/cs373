@@ -69,6 +69,7 @@ sync:
     --include "Coverage3.py"               \
     --include "IsPrime.py"                 \
     --include "IsPrimeT.py"                \
+    --include "Exceptions.py"              \
     --exclude "*"                          \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete            \
@@ -80,6 +81,7 @@ sync:
     --include "Coverage1.js"               \
     --include "Coverage2.js"               \
     --include "Coverage3.js"               \
+    --include "Exceptions.js"              \
     --exclude "*"                          \
     ../../examples/javascript/ examples
 	@rsync -r -t -u -v --delete            \

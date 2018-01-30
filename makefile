@@ -91,7 +91,6 @@ sync:
     --include "RunCollatz.in"              \
     --include "RunCollatz.out"             \
     --include "TestCollatz.py"             \
-    --include "TestCollatz.out"            \
     --exclude "*"                          \
     ../../projects/python/collatz/ projects/collatz
 

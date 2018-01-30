@@ -30,12 +30,16 @@ Collatz.log:
 	git log > Collatz.log
 
 RunCollatz.pyx: Collatz.py RunCollatz.py .pylintrc
+	-mypy   Collatz.py
+	-pylint Collatz.py
 	-mypy   RunCollatz.py
 	-pylint RunCollatz.py
 	./RunCollatz.py < RunCollatz.in > RunCollatz.tmp
 	-diff RunCollatz.tmp RunCollatz.out
 
 TestCollatz.pyx: Collatz.py TestCollatz.py .pylintrc
+	-mypy   Collatz.py
+	-pylint Collatz.py
 	-mypy     TestCollatz.py
 	-pylint   TestCollatz.py
 	-coverage run    --branch TestCollatz.py

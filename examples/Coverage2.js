@@ -1,13 +1,8 @@
 #!/usr/bin/env node
 
-/*global
-    require,
+/* global
     suite,
     test
-*/
-
-/*jslint
-    white: true
 */
 
 // ------------

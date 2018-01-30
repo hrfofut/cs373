@@ -1,14 +1,10 @@
 #!/usr/bin/env node
 
-/*jslint
-    white: true
-*/
-
 // -------------
 // Assertions.js
 // -------------
 
-// https://nodejs.org/api/assert.html
+// https://www.w3schools.com/nodejs/ref_assert.asp
 
 "use strict";
 

@@ -8,8 +8,6 @@
 // http://www.jslint.com
 // https://nodejs.org
 
-"use strict";
-
 console.log("Nothing to be done.");
 
 /*

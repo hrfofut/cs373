@@ -38,8 +38,8 @@ RunCollatz.pyx: Collatz.py RunCollatz.py .pylintrc
 	-diff RunCollatz.tmp RunCollatz.out
 
 TestCollatz.pyx: Collatz.py TestCollatz.py .pylintrc
-	-mypy   Collatz.py
-	-pylint Collatz.py
+	-mypy     Collatz.py
+	-pylint   Collatz.py
 	-mypy     TestCollatz.py
 	-pylint   TestCollatz.py
 	-coverage run    --branch TestCollatz.py
